@@ -16,9 +16,9 @@ body {
     color: #00416d;
 }
 h1 {
-    margin: 50px auto;
+    margin: 50px auto 0;
     font-family: "Sacramento", arial, sans-serif;
-    font-size: 9rem;
+    font-size: min(15vw, 180px);
     font-weight: normal;
     line-height: 2;
 }
@@ -33,7 +33,6 @@ hr {
     border-top-style: dotted;
     border-width: 10px;
     width: 5%;
-    height: 0;
 }
 span {
     text-decoration: underline;
@@ -44,20 +43,42 @@ span {
     bottom: 50%;
 }
 .bottom-container {
-    position: relative;
     background-color: #66BFBF;
-    padding: 3rem 0;
+    padding: 5%;
+    position: relative;
+}
+.btn {
+  background: #11cdd4;
+  background-image: linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  border-radius: 8px;
+  font-family: Arial;
+  color: #00416d;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #30e3cb;
+  background-image: linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
 }
 .code-img {
-    width: 30%;
+    width: 100%;
+    max-width: 150px;
     float: right;
     margin-left: 30px;
 }
 .contact-me {
-    width: 40%;
-    margin: 0 auto;
-    padding: 100px;
+    margin: 10% auto 0;
     line-height: 2;
+    width: 63%;
+}
+.contact-para {
+    width: 100%;
+    max-width: 400px;
+    margin: 5% auto;
 }
 .copyright {
     color: inherit;
@@ -67,47 +88,55 @@ span {
 .desc {
     font-size: 1.5rem;
     font-weight: normal;
+    margin: 0;
 }
 .design-img{
-    width: 30%;
+    width: 100%;
+    max-width: 150px;
     float: left;
     margin-right: 30px;
 }
 .footer-link {
-    color: inherit;
-    font-size: 1.5rem;
+    font-size: inherit;
     margin: 0 20px;
 }
 .middle-container {
     background-color: #f1f3f8;
     position: relative;
+    padding: 10%;
 }
 .mountain {
-    width: 38%;
+    width: 100%;
+    max-width: 1000px;
 }
 .my-img {
-    width: 40%;
+    width: 100%;
+    max-width: 200px;
 }
 .profile {
-    margin: 0 auto;
-    padding: 100px;
-    width: 50%;
     line-height: 2;
+    width: 63%;
+    margin: 0 auto 10%;
+}
+.profile-desc {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 .skills {
-    padding: 100px 0;
+    width: 63%;
+    margin: 10% auto;
+    text-align: center;
+    line-height: 2;
 }
-.skill-row-1 {
-    width: 50%;
-    margin: 0 auto;
-    padding: 100px;
+.skill-row {
+    margin: 100px 0;
     text-align: left;
     line-height: 2;
 }
 .skill-row-2 {
     width: 50%;
-    margin: 0 auto;
-    padding: 100px;
+    margin: 100px auto;
     text-align: left;
     line-height: 2;
 }
@@ -115,9 +144,10 @@ span {
     position: absolute;
     right: 20%;
     top: 5%;
+    height: min(150px,30vw);
 }
 .top-container {
     background-color: #a2d5f2;
-    position: relative;
     padding-top: 100px;
+    position: relative;
 }
